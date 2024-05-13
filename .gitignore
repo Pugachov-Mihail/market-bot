@@ -1,5 +1,4 @@
 .venv
 .idea
 *.db
-
-migrations/versions/
+/migrations/versions/
