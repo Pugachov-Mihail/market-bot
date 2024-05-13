@@ -9,7 +9,7 @@ def report_sales() -> list[str]:
            filter(goods.Goods.status == False).all())
     result = []
     for i in res:
-        result.append(f"<b>{i.id}</b>) <b>{i.name}</b>: закупка <b>{i.sales_price}</b> "
-                      f"продажа <b>{i.purchase_price}</b> кол-во <b>{i. count}</b> \n")
+        result.append(f"<b>{i.id}</b>) <b>{i.name}</b>:\nЗакупка: <b>{i.sales_price}</b> "
+                      f"\nПродажа: <b>{i.purchase_price}</b>\nКол-во: <b>{i. count}</b> \n")
 
     return result
