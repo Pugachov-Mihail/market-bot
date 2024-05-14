@@ -24,7 +24,7 @@ class MyTestCase(unittest.TestCase):
             session.add(good)
         session.commit()
 
-        self.debug()  # add assertion here
+        self.assertEqual()  # add assertion here
 
 
 if __name__ == '__main__':
